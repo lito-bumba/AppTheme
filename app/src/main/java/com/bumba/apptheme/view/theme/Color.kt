@@ -1,4 +1,4 @@
-package com.bumba.apptheme.ui.theme
+package com.bumba.apptheme.view.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,4 +1,4 @@
-package com.bumba.apptheme.ui.theme
+package com.bumba.apptheme.view.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

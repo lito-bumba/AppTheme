@@ -17,7 +17,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.bumba.apptheme.ui.theme.AppTheme
+import com.bumba.apptheme.view.MainScreen
+import com.bumba.apptheme.view.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,37 +26,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AppTheme {
-                Scaffold(
-                    modifier = Modifier
-                        .fillMaxSize(),
-                    containerColor = MaterialTheme.colorScheme.background
-                ) { innerPadding ->
-                    Column(
-                        verticalArrangement = Arrangement.spacedBy(16.dp),
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        modifier = Modifier
-                            .fillMaxSize()
-                            .padding(innerPadding)
-                    ) {
-                        Text(
-                            text = "Theme App",
-                            style = MaterialTheme.typography.titleLarge,
-                            fontWeight = FontWeight.Bold
-                        )
-
-                        Surface(
-                            color = MaterialTheme.colorScheme.primary,
-                            shape = RoundedCornerShape(16.dp)
-                        ) {
-                            Text(
-                                text = "Theme App",
-                                style = MaterialTheme.typography.bodyLarge,
-                                fontWeight = FontWeight.Bold,
-                                modifier = Modifier.padding(all = 16.dp)
-                            )
-                        }
-                    }
-                }
+                MainScreen()
             }
         }
     }

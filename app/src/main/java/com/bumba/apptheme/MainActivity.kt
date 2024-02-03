@@ -23,11 +23,8 @@ import com.bumba.apptheme.view.theme.AppTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
-            AppTheme {
-                MainScreen()
-            }
+            MainScreen()
         }
     }
 }

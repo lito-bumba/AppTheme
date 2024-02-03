@@ -49,7 +49,7 @@ fun MainScreen(
                     title = {
                         Text(
                             text = "App Theme",
-                            fontWeight = FontWeight.Bold
+                            style = MaterialTheme.typography.titleLarge
                         )
                     },
                     scrollBehavior = scrollBehavior,
